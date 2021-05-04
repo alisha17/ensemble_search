@@ -1,3 +1,4 @@
 flask
 black
 flask-sqlalchemy
+PyMySQL==1.0.2
