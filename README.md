@@ -1,18 +1,20 @@
 **Ensemble search API**
 
-Instructions to run this web service:
-
 This application requires:
 
     Python 3.8.6
 
 Install the requirements using:
 
+```
 pip install -r requirements.txt
+```
 
 To run the application (this will start the flask server - default port is 5000):
 
+```
 python run_server.py
+```
 
 Hit the endpoint using [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) 
 or any other API platform your prefer:
@@ -44,8 +46,10 @@ To format the code, [Black](https://github.com/psf/black) formatter is used whic
 ```
 black .
 ```
-**_NOTE_** : At the moment, there is no pagination for results. But if the expected number of results is large,
-it is 
+**_NOTE_** : 
+- At the moment, there is no pagination for results. But if the expected number of results is large,
+it is best to paginate the results.
+- The SQL credentials should ideally be passed as command line arguments or stored in a config file instead of hardcoding in the code.
 
 **Deployment**
 
