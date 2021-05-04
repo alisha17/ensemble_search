@@ -74,9 +74,9 @@ scaling group in AWS Elastic Beanstalk will spawn more EC2 instances when the tr
 
 To test the application:
 
-1. Write unit tests using pytest to mock the api and validate
- the input and response of the api (testing the routes).
+1. Write unit tests using pytest to mock the API and validate
+ the input and response of the API (testing the routes).
  
 2. If the production database is very large, it is best to create a new mock database with limited values to test the routes.
 
-3. To automate the testing, the use of CI pipelines is essential. Using a framework like CircleCI, Jenkins, Concourse etc., the tests can be automated to run on each build.
+3. To automate the testing, the use of CI pipelines is essential. By using a framework like CircleCI, Jenkins, Concourse etc., the tests can be automated to run on each build.
