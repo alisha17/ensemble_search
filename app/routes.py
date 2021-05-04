@@ -18,9 +18,9 @@ def get_genes():
     Endpoint to get gene names for the user query
     :return JSON returning all the gene names matching the user query
     """
-    search = request.args.get("query")
-    species = request.args.get("species")
-    max_records = request.args.get("size")
+    search = request.args.get("query") # user query
+    species = request.args.get("species") # species name
+    max_records = request.args.get("size") # size of the results
     q = (
         db.session.query(Gene)
         .filter(Gene.species == species, Gene.display_label.startswith(search))

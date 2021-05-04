@@ -44,7 +44,8 @@ To format the code, [Black](https://github.com/psf/black) formatter is used whic
 ```
 black .
 ```
-
+**_NOTE_** : At the moment, there is no pagination for results. But if the expected number of results is large,
+it is 
 
 **Deployment**
 
