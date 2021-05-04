@@ -1,4 +1,4 @@
-**Ensemble search API**
+## Ensemble search API
 
 This application requires:
 
@@ -19,8 +19,10 @@ python run_server.py
 Hit the endpoint using [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) 
 or any other API platform your prefer:
 
+Example call:
+
 ```
-    http://localhost:5000/gene_suggest?query=nd&species=rhinopithecus_roxellana&size=5
+http://localhost:5000/gene_suggest?query=nd&species=rhinopithecus_roxellana&size=5
 ```
 
 You should see the response:
@@ -46,12 +48,12 @@ To format the code, [Black](https://github.com/psf/black) formatter is used whic
 ```
 black .
 ```
-**_NOTE_** : 
+#### NOTES : 
 - At the moment, there is no pagination for results. But if the expected number of results is large,
 it is best to paginate the results.
 - The SQL credentials should ideally be passed as command line arguments or stored in a config file instead of hardcoding in the code.
 
-**Deployment**
+### Deployment
 
 There can be different ways to deploy this application:
 1. Easiest would be to deploy this web service to AWS EC2 instance, using gunicorn for server and nginx for reverse proxy and load balancing and if there is a front-end for this web service,
@@ -68,13 +70,13 @@ Most of the deployment solutions above help in scaling when the load increases. 
 scaling group in AWS Elastic Beansktalk will spawn more EC2 instances when the traffic increases.
 
 
-**Testing**
+### Testing
 
 To test the application:
 
 1. Write unit tests using pytest to mock the api and validate
  the input and response of the api (testing the routes).
  
-2. If the production db is very large, it is best to create a new mock database with limited values to test the routes.
+2. If the production database is very large, it is best to create a new mock database with limited values to test the routes.
 
 3. To automate the testing, the use of CI pipelines is essential. Using a framework like CircleCI, Jenkins, Concourse etc., the tests can be automated to run on each build.
