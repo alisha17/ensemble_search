@@ -62,12 +62,12 @@ OR
 2. The web service could be deployed to Heroku (free tier) but if we need to scale then we need a paid plan which does load balancing
 to handle the number of requests. OR
 
-3. Deploy to AWS elastic beanstalk - Elastic Beanstalk sets up an environment including 
+3. Deploy to AWS Elastic Beanstalk - Elastic Beanstalk sets up an environment including 
 EC2 instances, load balancers etc. (easier to scale if the traffic increases)
 
 To make the solution more scalable, a more sophisticated architectural solution can be used so as to balance the load when number of requests increases.
 Most of the deployment solutions above help in scaling when the load increases. For example: The auto 
-scaling group in AWS Elastic Beansktalk will spawn more EC2 instances when the traffic increases.
+scaling group in AWS Elastic Beanstalk will spawn more EC2 instances when the traffic increases.
 
 
 ### Testing
